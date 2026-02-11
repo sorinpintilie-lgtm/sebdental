@@ -163,7 +163,7 @@ export default async function ProdusePage({
             <button className="rounded-xl border border-fg/20 px-3 py-2 text-sm">Aplică</button>
           </form>
         </div>
-        <div className="mt-6 grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+        <div className="mt-6 grid grid-cols-2 gap-4 xl:grid-cols-3">
           {filtered.map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}

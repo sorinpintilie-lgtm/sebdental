@@ -140,10 +140,10 @@ export default async function ProdusPage({ params }: { params: Promise<{ slug: s
         <h2 className="text-2xl">Funcționează excelent împreună</h2>
         <p className="mt-1 text-sm text-fg/70">Recomandare practică: freză + mandrină + instrument complementar pentru același protocol.</p>
         <div className="mt-4 rounded-2xl border border-fg/10 bg-surface p-4">
-          <div className="grid gap-3 md:grid-cols-[1fr_auto_1fr_auto_1fr_auto] md:items-stretch">
+          <div className="flex gap-3 overflow-x-auto pb-1 md:grid md:gap-3 md:overflow-visible md:pb-0 md:grid-cols-[1fr_auto_1fr_auto_1fr_auto] md:items-stretch">
             {products.slice(10, 13).map((p, index) => (
               <div key={p.id} className="contents">
-                <div className="rounded-xl border border-fg/10 bg-white p-3">
+                <div className="min-w-[280px] rounded-xl border border-fg/10 bg-white p-3 md:min-w-0">
                   <ProductCard product={p} />
                 </div>
                 {index < 2 && (
@@ -171,9 +171,9 @@ export default async function ProdusPage({ params }: { params: Promise<{ slug: s
       <section className="rounded-2xl border border-fg/10 bg-surface p-5">
         <h2 className="text-2xl">Recomandări premium din același brand</h2>
         <p className="mt-1 text-sm text-fg/70">Selecție curată din gama {product.brand}, orientată pe consistență.</p>
-        <div className="mt-4 grid gap-3 md:grid-cols-3">
+        <div className="mt-4 flex gap-3 overflow-x-auto pb-1 md:grid md:grid-cols-3 md:overflow-visible md:pb-0">
           {upsell.map((p) => (
-            <div key={p.id} className="rounded-xl border border-fg/10 bg-white p-2">
+            <div key={p.id} className="min-w-[280px] rounded-xl border border-fg/10 bg-white p-2 md:min-w-0">
               <p className="px-2 pt-2 text-xs text-fg/60 mono">Premium • {p.brand}</p>
               <ProductCard product={p} />
             </div>
@@ -198,9 +198,11 @@ export default async function ProdusPage({ params }: { params: Promise<{ slug: s
 
       <section>
         <h2 className="text-2xl">Alternative pe aceeași compatibilitate {product.shank}</h2>
-        <div className="mt-4 grid gap-4 md:grid-cols-3">
+        <div className="mt-4 flex gap-4 overflow-x-auto pb-1 md:grid md:grid-cols-3 md:overflow-visible md:pb-0">
           {alternativeByShank.map((p) => (
-            <ProductCard key={p.id} product={p} />
+            <div key={p.id} className="min-w-[280px] md:min-w-0">
+              <ProductCard product={p} />
+            </div>
           ))}
         </div>
       </section>

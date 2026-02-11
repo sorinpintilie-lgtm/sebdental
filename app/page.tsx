@@ -24,7 +24,7 @@ export default function HomePage() {
       <section className="grid gap-4 lg:grid-cols-12">
         <article className="surface rounded-3xl p-6 lg:col-span-7">
           <h2 className="text-2xl">Alege după aplicație clinică</h2>
-          <div className="mt-5 grid gap-3 sm:grid-cols-2">
+          <div className="mt-5 grid grid-cols-2 gap-3">
             {aplicatii.map((a) => (
               <Link key={a} href={`/produse?aplicatie=${encodeURIComponent(a)}`} className="rounded-2xl border border-fg/10 p-4">
                 <p className="font-medium">{a}</p>
@@ -36,9 +36,9 @@ export default function HomePage() {
 
         <article className="surface rounded-3xl p-6 lg:col-span-5">
           <h2 className="text-2xl">Pachete recomandate</h2>
-          <div className="mt-5 space-y-3">
+          <div className="mt-5 flex gap-3 overflow-x-auto pb-1 lg:block lg:space-y-3 lg:overflow-visible lg:pb-0">
             {pachete.map((p) => (
-              <div key={p.title} className="rounded-2xl border border-fg/10 p-4">
+              <div key={p.title} className="min-w-[260px] rounded-2xl border border-fg/10 p-4 lg:min-w-0">
                 <p className="font-semibold">{p.title}</p>
                 <p className="mt-1 text-sm text-fg/70">{p.items}</p>
                 <p className="mt-3 font-semibold">{p.price}</p>
@@ -69,7 +69,7 @@ export default function HomePage() {
           <h2 className="text-2xl">Produse bestseller</h2>
           <Link href="/produse" className="text-sm text-fg/70">Vezi catalogul complet</Link>
         </div>
-        <div className="grid gap-4 md:grid-cols-3 lg:grid-cols-4">
+        <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
           {best.map((p) => (
             <ProductCard key={p.id} product={p} />
           ))}
