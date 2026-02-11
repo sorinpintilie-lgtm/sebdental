@@ -109,7 +109,7 @@ export function HeroPanel() {
         </div>
       </div>
 
-      <div className="grid gap-3 sm:grid-cols-2 md:grid-cols-3">
+      <div className="grid grid-cols-2 gap-3 md:grid-cols-3">
         <Link href="/produse" className="surface rounded-2xl p-4 transition hover:-translate-y-0.5">
           <Search className="h-4 w-4" />
           <p className="mt-2 font-medium">Căutare rapidă</p>
@@ -120,17 +120,17 @@ export function HeroPanel() {
           <p className="mt-2 font-medium">Reordonare rapidă</p>
           <p className="mt-1 text-sm text-fg/70">Acces la comenzi recente și adăugare rapidă în coș.</p>
         </Link>
-        <Link href="/checkout" className="surface rounded-2xl p-4 transition hover:-translate-y-0.5 sm:col-span-2 md:col-span-1">
+        <Link href="/checkout" className="surface col-span-2 rounded-2xl p-4 transition hover:-translate-y-0.5 md:col-span-1">
           <Package className="h-4 w-4" />
           <p className="mt-2 font-medium">Pachete recomandate</p>
           <p className="mt-1 text-sm text-fg/70">Seturi pentru finisare, zirconiu și restaurări directe.</p>
         </Link>
       </div>
 
-      <div className="grid gap-3 sm:grid-cols-2 md:grid-cols-3">
-        {slides.map((slide) => (
-          <div key={slide.title} className="relative overflow-hidden rounded-2xl border border-fg/10">
-            <Image src={slide.image} alt={slide.title} width={900} height={450} className="h-36 w-full object-cover md:h-40" />
+      <div className="grid grid-cols-2 gap-3 md:grid-cols-3">
+        {slides.map((slide, i) => (
+          <div key={slide.title} className={`relative overflow-hidden rounded-2xl border border-fg/10 ${i === 0 ? "col-span-2" : "col-span-1"}`}>
+            <Image src={slide.image} alt={slide.title} width={900} height={450} className="h-36 w-full object-cover blur-[2px] md:h-40 md:blur-0" />
             <div className="absolute inset-0 bg-gradient-to-t from-fg/60 to-transparent" />
             <p className="absolute bottom-2 left-3 right-3 text-xs font-medium text-white">{slide.title}</p>
           </div>
