@@ -21,27 +21,27 @@ export default function HomePage() {
         <HeroPanel />
       </section>
 
-      <section className="grid gap-4 lg:grid-cols-12">
-        <article className="surface rounded-3xl p-4 sm:p-6 lg:col-span-7">
-          <h2 className="text-xl sm:text-2xl">Alege după aplicație clinică</h2>
-          <div className="mt-5 grid grid-cols-2 gap-3">
+      <section className="space-y-3 lg:grid lg:gap-4 lg:space-y-0 lg:grid-cols-12">
+        <article className="surface rounded-3xl p-3 sm:p-6 lg:col-span-7">
+          <h2 className="text-base sm:text-2xl">Alege după aplicație clinică</h2>
+          <div className="mt-2 grid grid-cols-2 gap-2 sm:mt-5 sm:gap-3">
             {aplicatii.map((a) => (
-              <Link key={a} href={`/produse?aplicatie=${encodeURIComponent(a)}`} className="rounded-2xl border border-fg/10 p-3 sm:p-4">
-                <p className="text-sm font-medium sm:text-base">{a}</p>
-                <p className="mt-1 text-xs text-fg/70 sm:text-sm">Produse selectate pentru rezultate predictibile.</p>
+              <Link key={a} href={`/produse?aplicatie=${encodeURIComponent(a)}`} className="rounded-xl border border-fg/10 p-2 sm:rounded-2xl sm:p-4">
+                <p className="text-[12px] font-medium leading-tight sm:text-base">{a}</p>
+                <p className="mt-1 line-clamp-2 text-[10px] leading-snug text-fg/70 sm:text-sm">Produse selectate pentru rezultate predictibile.</p>
               </Link>
             ))}
           </div>
         </article>
 
-        <article className="surface rounded-3xl p-4 sm:p-6 lg:col-span-5">
-          <h2 className="text-xl sm:text-2xl">Pachete recomandate</h2>
-          <div className="mt-5 flex gap-3 overflow-x-auto pb-1 lg:block lg:space-y-3 lg:overflow-visible lg:pb-0">
+        <article className="surface rounded-3xl p-3 sm:p-6 lg:col-span-5">
+          <h2 className="text-base sm:text-2xl">Pachete recomandate</h2>
+          <div className="mt-2 flex snap-x snap-mandatory gap-2 overflow-x-auto pb-1 sm:mt-5 sm:gap-3 lg:block lg:space-y-3 lg:overflow-visible lg:pb-0">
             {pachete.map((p) => (
-              <div key={p.title} className="min-w-[220px] rounded-2xl border border-fg/10 p-3 sm:min-w-[260px] sm:p-4 lg:min-w-0">
-                <p className="text-sm font-semibold sm:text-base">{p.title}</p>
-                <p className="mt-1 text-xs text-fg/70 sm:text-sm">{p.items}</p>
-                <p className="mt-2 text-sm font-semibold sm:mt-3 sm:text-base">{p.price}</p>
+              <div key={p.title} className="min-w-[72vw] snap-start rounded-xl border border-fg/10 p-2.5 sm:min-w-[260px] sm:rounded-2xl sm:p-4 lg:min-w-0">
+                <p className="text-[12px] font-semibold leading-tight sm:text-base">{p.title}</p>
+                <p className="mt-1 line-clamp-2 text-[10px] leading-snug text-fg/70 sm:text-sm">{p.items}</p>
+                <p className="mt-1.5 text-[12px] font-semibold sm:mt-3 sm:text-base">{p.price}</p>
               </div>
             ))}
           </div>
