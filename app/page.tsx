@@ -22,26 +22,26 @@ export default function HomePage() {
       </section>
 
       <section className="grid gap-4 lg:grid-cols-12">
-        <article className="surface rounded-3xl p-6 lg:col-span-7">
-          <h2 className="text-2xl">Alege după aplicație clinică</h2>
+        <article className="surface rounded-3xl p-4 sm:p-6 lg:col-span-7">
+          <h2 className="text-xl sm:text-2xl">Alege după aplicație clinică</h2>
           <div className="mt-5 grid grid-cols-2 gap-3">
             {aplicatii.map((a) => (
-              <Link key={a} href={`/produse?aplicatie=${encodeURIComponent(a)}`} className="rounded-2xl border border-fg/10 p-4">
-                <p className="font-medium">{a}</p>
-                <p className="mt-1 text-sm text-fg/70">Produse selectate pentru rezultate predictibile.</p>
+              <Link key={a} href={`/produse?aplicatie=${encodeURIComponent(a)}`} className="rounded-2xl border border-fg/10 p-3 sm:p-4">
+                <p className="text-sm font-medium sm:text-base">{a}</p>
+                <p className="mt-1 text-xs text-fg/70 sm:text-sm">Produse selectate pentru rezultate predictibile.</p>
               </Link>
             ))}
           </div>
         </article>
 
-        <article className="surface rounded-3xl p-6 lg:col-span-5">
-          <h2 className="text-2xl">Pachete recomandate</h2>
+        <article className="surface rounded-3xl p-4 sm:p-6 lg:col-span-5">
+          <h2 className="text-xl sm:text-2xl">Pachete recomandate</h2>
           <div className="mt-5 flex gap-3 overflow-x-auto pb-1 lg:block lg:space-y-3 lg:overflow-visible lg:pb-0">
             {pachete.map((p) => (
-              <div key={p.title} className="min-w-[260px] rounded-2xl border border-fg/10 p-4 lg:min-w-0">
-                <p className="font-semibold">{p.title}</p>
-                <p className="mt-1 text-sm text-fg/70">{p.items}</p>
-                <p className="mt-3 font-semibold">{p.price}</p>
+              <div key={p.title} className="min-w-[220px] rounded-2xl border border-fg/10 p-3 sm:min-w-[260px] sm:p-4 lg:min-w-0">
+                <p className="text-sm font-semibold sm:text-base">{p.title}</p>
+                <p className="mt-1 text-xs text-fg/70 sm:text-sm">{p.items}</p>
+                <p className="mt-2 text-sm font-semibold sm:mt-3 sm:text-base">{p.price}</p>
               </div>
             ))}
           </div>
@@ -66,7 +66,7 @@ export default function HomePage() {
 
       <section>
         <div className="mb-6 flex items-end justify-between">
-          <h2 className="text-2xl">Produse bestseller</h2>
+          <h2 className="text-xl sm:text-2xl">Produse bestseller</h2>
           <Link href="/produse" className="text-sm text-fg/70">Vezi catalogul complet</Link>
         </div>
         <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">

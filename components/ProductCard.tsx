@@ -22,7 +22,7 @@ export function ProductCard({ product }: { product: Product }) {
   return (
     <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-fg/10 bg-surface shadow-soft transition hover:-translate-y-1">
       <Link href={`/produs/${product.slug}`} className="relative block">
-        <div className="relative h-52 w-full overflow-hidden bg-white">
+        <div className="relative h-36 w-full overflow-hidden bg-white sm:h-52">
           <Image
             src={product.image}
             alt={product.name}
@@ -36,40 +36,40 @@ export function ProductCard({ product }: { product: Product }) {
           <Badge className="bg-white/95 text-fg">{product.grit}</Badge>
         </div>
       </Link>
-      <div className="flex h-full flex-col p-5">
+      <div className="flex h-full flex-col p-3 sm:p-5">
         <Link href={`/produs/${product.slug}`} className="block">
-          <h3 className="line-clamp-2 text-base font-semibold">{product.name}</h3>
+          <h3 className="line-clamp-2 text-sm font-semibold sm:text-base">{product.name}</h3>
         </Link>
-        <p className="mt-1 text-sm text-fg/65">{product.brand} • Ø {product.diameterMm} mm</p>
+        <p className="mt-1 text-xs text-fg/65 sm:text-sm">{product.brand} • Ø {product.diameterMm} mm</p>
         <p className="mt-2 mono text-xs text-fg/60">Cod: {product.sku}</p>
         {inCompare && (
           <p className="mt-2 inline-flex w-fit items-center rounded-full border border-primary/40 bg-primary/15 px-2 py-0.5 text-xs text-fg">
             În comparație
           </p>
         )}
-        <p className="mt-3 text-xl font-semibold">{product.priceLei} lei</p>
-        <div className="mt-auto grid grid-cols-2 gap-2 pt-4">
-        <Button size="sm" className="w-full bg-fg text-bg hover:bg-fg/90" onClick={() => add(product.id)}>Adaugă în coș</Button>
-        <Link href={`/produs/${product.slug}`} className="w-full"><Button size="sm" variant="outline" className="w-full">Detalii</Button></Link>
+        <p className="mt-3 text-base font-semibold sm:text-xl">{product.priceLei} lei</p>
+        <div className="mt-auto grid grid-cols-2 gap-2 pt-3 sm:pt-4">
+        <Button size="sm" className="w-full bg-fg px-2 text-xs text-bg hover:bg-fg/90 sm:text-sm" onClick={() => add(product.id)}>Adaugă</Button>
+        <Link href={`/produs/${product.slug}`} className="w-full"><Button size="sm" variant="outline" className="w-full px-2 text-xs sm:text-sm">Detalii</Button></Link>
         <Button
-          size="sm"
+          size="icon"
           variant="outline"
-          className={`w-full justify-start gap-2 rounded-xl ${inWishlist ? "border-primary/60 bg-primary/10" : "border-fg/20"}`}
+          className={`h-8 w-full rounded-xl ${inWishlist ? "border-primary/60 bg-primary/10" : "border-fg/20"}`}
           onClick={() => toggleWishlist(product.id)}
           aria-label="Favorite"
         >
           <Heart className={`h-4 w-4 ${inWishlist ? "fill-primary text-primary" : "text-fg/70"}`} />
-          Favorite
+          <span className="sr-only">Favorite</span>
         </Button>
         <Button
-          size="sm"
+          size="icon"
           variant="outline"
-          className={`w-full justify-start gap-2 rounded-xl transition ${inCompare ? "border-primary bg-primary/20 ring-1 ring-primary/30" : "border-fg/20"}`}
+          className={`h-8 w-full rounded-xl transition ${inCompare ? "border-primary bg-primary/20 ring-1 ring-primary/30" : "border-fg/20"}`}
           onClick={() => toggleCompare(product.id)}
           aria-label="Compară"
         >
           <GitCompareArrows className={`h-4 w-4 ${inCompare ? "text-primary" : "text-fg/70"}`} />
-          Compară
+          <span className="sr-only">Compară</span>
         </Button>
         </div>
       </div>
