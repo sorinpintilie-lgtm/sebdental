@@ -35,7 +35,42 @@ export function HeroPanel() {
 
   return (
     <section className="space-y-5">
-      <div className="relative overflow-hidden rounded-3xl border border-fg/10 bg-surface">
+      <div className="relative overflow-hidden rounded-3xl border border-fg/10 bg-surface md:hidden">
+        <video
+          className="h-[300px] w-full object-cover"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
+          poster={primary.image}
+        >
+          <source src="/Beautiful-Smile-And-Perfect-Teeth-In-Dental-Clinic-4K-2025-12-17-21-47-45-Utc.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-black/20 to-transparent" />
+        <div className="absolute inset-x-0 bottom-0 p-3">
+          <div className="rounded-xl border border-white/25 bg-white/92 p-3 backdrop-blur-sm">
+            <h1 className="text-base leading-snug text-fg">{primary.title}</h1>
+            <p className="mt-1 text-xs text-fg/75">{primary.subtitle}</p>
+            <div className="mt-3 grid grid-cols-2 gap-2">
+              <Link href="/produse" className="rounded-lg bg-fg px-3 py-2 text-center text-xs font-medium text-bg">Vezi produse</Link>
+              <Link href="/comanda-rapida" className="rounded-lg border border-fg/20 px-3 py-2 text-center text-xs text-fg">Comandă rapidă</Link>
+            </div>
+          </div>
+        </div>
+        <div className="absolute right-3 top-3 flex gap-2">
+          {slides.map((_, i) => (
+            <button
+              key={i}
+              onClick={() => setIndex(i)}
+              aria-label={`Slide ${i + 1}`}
+              className={`h-2.5 w-2.5 rounded-full ${i === index ? "bg-white" : "bg-white/45"}`}
+            />
+          ))}
+        </div>
+      </div>
+
+      <div className="relative hidden overflow-hidden rounded-3xl border border-fg/10 bg-surface md:block">
         <video
           className="h-[460px] w-full object-cover md:h-[500px]"
           autoPlay
