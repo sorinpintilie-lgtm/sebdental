@@ -8,7 +8,6 @@ export default async function ProdusePage({
   searchParams,
 }: {
   searchParams: Promise<{
-    compara?: string;
     brand?: string;
     compat?: string;
     q?: string;
@@ -21,7 +20,6 @@ export default async function ProdusePage({
   }>;
 }) {
   const params = await searchParams;
-  const compareMode = params.compara === "1";
   const brand = params.brand;
   const compat = params.compat;
   const q = (params.q ?? "").toLowerCase().trim();
@@ -31,8 +29,6 @@ export default async function ProdusePage({
   const diametru = params.diametru;
   const color = params.color;
   const tip = params.tip;
-
-  const compareProducts = products.slice(0, 4);
 
   let filtered = products.filter((p) => {
     const byBrand = brand ? p.brand === brand : true;
@@ -73,45 +69,6 @@ export default async function ProdusePage({
     });
     return `/produse?${sp.toString()}`;
   };
-
-  if (compareMode) {
-    return (
-      <section className="space-y-6">
-        <h1 className="text-3xl">Comparare produse</h1>
-        <div className="overflow-x-auto rounded-2xl border border-fg/10 bg-surface">
-          <table className="w-full min-w-[900px] text-sm">
-            <thead>
-              <tr className="border-b border-fg/10 bg-fg/5">
-                <th className="p-3 text-left">Criteriu</th>
-                {compareProducts.map((p) => (
-                  <th key={p.id} className="p-3 text-left">{p.name}</th>
-                ))}
-              </tr>
-            </thead>
-            <tbody>
-              {[
-                ["Compatibilitate", (p: (typeof compareProducts)[number]) => p.shank],
-                ["Material", (p: (typeof compareProducts)[number]) => p.material],
-                ["Granulație", (p: (typeof compareProducts)[number]) => p.grit],
-                ["Formă", (p: (typeof compareProducts)[number]) => p.shape],
-                ["Ø", (p: (typeof compareProducts)[number]) => `${p.diameterMm} mm`],
-                ["ISO", (p: (typeof compareProducts)[number]) => p.isoCode],
-                ["RPM recomandat", (p: (typeof compareProducts)[number]) => p.recommendedRpm],
-                ["Stoc", (p: (typeof compareProducts)[number]) => p.stockStatus],
-              ].map(([label, get]) => (
-                <tr key={label as string} className="border-b border-fg/10">
-                  <td className="p-3 font-medium">{label as string}</td>
-                  {compareProducts.map((p) => (
-                    <td key={p.id} className="p-3">{(get as (p: (typeof compareProducts)[number]) => string)(p)}</td>
-                  ))}
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      </section>
-    );
-  }
 
   return (
     <section className="grid gap-8 lg:grid-cols-[320px_1fr]">

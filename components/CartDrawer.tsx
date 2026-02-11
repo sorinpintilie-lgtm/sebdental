@@ -14,7 +14,7 @@ export function CartDrawer() {
 
   return (
     <Sheet open={isOpen} onOpenChange={(o) => (!o ? close() : null)}>
-      <SheetContent className="w-full sm:max-w-xl">
+      <SheetContent className="w-full border-l border-fg/10 bg-surface sm:max-w-xl">
         <SheetHeader>
           <SheetTitle>Coș</SheetTitle>
         </SheetHeader>

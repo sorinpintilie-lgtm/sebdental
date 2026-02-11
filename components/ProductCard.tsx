@@ -42,6 +42,11 @@ export function ProductCard({ product }: { product: Product }) {
         </Link>
         <p className="mt-1 text-sm text-fg/65">{product.brand} • Ø {product.diameterMm} mm</p>
         <p className="mt-2 mono text-xs text-fg/60">Cod: {product.sku}</p>
+        {inCompare && (
+          <p className="mt-2 inline-flex w-fit items-center rounded-full border border-primary/40 bg-primary/15 px-2 py-0.5 text-xs text-fg">
+            În comparație
+          </p>
+        )}
         <p className="mt-3 text-xl font-semibold">{product.priceLei} lei</p>
         <div className="mt-auto grid grid-cols-2 gap-2 pt-4">
         <Button size="sm" className="w-full bg-fg text-bg hover:bg-fg/90" onClick={() => add(product.id)}>Adaugă în coș</Button>
@@ -59,7 +64,7 @@ export function ProductCard({ product }: { product: Product }) {
         <Button
           size="sm"
           variant="outline"
-          className={`w-full justify-start gap-2 rounded-xl ${inCompare ? "border-primary/60 bg-primary/10" : "border-fg/20"}`}
+          className={`w-full justify-start gap-2 rounded-xl transition ${inCompare ? "border-primary bg-primary/20 ring-1 ring-primary/30" : "border-fg/20"}`}
           onClick={() => toggleCompare(product.id)}
           aria-label="Compară"
         >

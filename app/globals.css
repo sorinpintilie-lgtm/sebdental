@@ -12,6 +12,7 @@
 }
 
 :root{
+  --promo-height: 40px;
   --bg: 246 246 246;
   --fg: 0 0 0;
   --surface: 255 255 255;
@@ -36,6 +37,7 @@ body{
   color: rgb(var(--fg));
   font-family: var(--font-inter), sans-serif;
   overflow-x: hidden;
+  padding-top: calc(var(--promo-height) + env(safe-area-inset-top, 0px));
 }
 
 h1,
