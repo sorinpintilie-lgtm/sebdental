@@ -1,9 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import { CircleUserRound, Search, ShoppingCart } from "lucide-react";
+import { CircleUserRound, Menu, Search, ShoppingCart } from "lucide-react";
 import { useCartStore } from "@/stores/useCartStore";
 import { Button } from "@/components/ui/button";
+import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 
 const links = [
   ["/", "Acasă"],
@@ -26,6 +27,26 @@ export function Header() {
           ))}
         </nav>
         <div className="flex items-center gap-2">
+          <Sheet>
+            <SheetTrigger asChild>
+              <Button variant="outline" size="icon" className="h-9 w-9 border-fg/20 text-fg hover:bg-fg/5 md:hidden" aria-label="Deschide meniul">
+                <Menu className="h-4 w-4" />
+              </Button>
+            </SheetTrigger>
+            <SheetContent side="right" className="w-[86vw] max-w-sm border-l border-fg/15 bg-surface p-0">
+              <SheetHeader className="border-b border-fg/10">
+                <SheetTitle>Meniu</SheetTitle>
+              </SheetHeader>
+              <nav className="grid gap-1 p-4">
+                {links.map(([href, label]) => (
+                  <Link key={href} href={href} className="rounded-xl border border-fg/10 px-4 py-3 text-sm text-fg/85 hover:bg-fg/5">
+                    {label}
+                  </Link>
+                ))}
+                <Link href="/cont" className="rounded-xl border border-fg/10 px-4 py-3 text-sm text-fg/85 hover:bg-fg/5">Contul meu</Link>
+              </nav>
+            </SheetContent>
+          </Sheet>
           <Button variant="outline" size="sm" className="focus-ring border-primary/40 text-fg hover:bg-primary/10" aria-label="Caută produse">
             <Search className="h-4 w-4" />
             <span className="ml-2 hidden sm:inline">Caută</span>
