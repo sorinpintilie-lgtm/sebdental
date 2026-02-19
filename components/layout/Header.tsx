@@ -25,10 +25,10 @@ export function Header() {
           <Image
             src="/Sdental.png"
             alt="Sdental"
-            width={220}
-            height={56}
+            width={260}
+            height={68}
             priority
-            className="h-10 w-auto transition duration-300 group-hover:drop-shadow-[0_0_8px_rgb(var(--primary)/0.35)]"
+            className="h-12 w-auto transition duration-300 group-hover:drop-shadow-[0_0_8px_rgb(var(--primary)/0.35)]"
           />
         </Link>
         <nav className="hidden gap-6 text-sm md:flex">
