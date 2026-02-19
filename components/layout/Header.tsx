@@ -20,15 +20,15 @@ export function Header() {
 
   return (
     <header className="sticky top-[calc(var(--promo-height)+env(safe-area-inset-top))] z-40 border-b border-primary/30 bg-bg/90 backdrop-blur">
-      <div className="mx-auto flex h-16 w-full max-w-[1280px] items-center justify-between px-4 md:px-8">
+      <div className="mx-auto flex h-20 w-full max-w-[1280px] items-center justify-between px-4 md:px-8">
         <Link href="/" className="group inline-flex items-center" aria-label="Sdental acasă">
           <Image
             src="/Sdental.png"
             alt="Sdental"
-            width={260}
-            height={68}
+            width={340}
+            height={90}
             priority
-            className="h-12 w-auto transition duration-300 group-hover:drop-shadow-[0_0_8px_rgb(var(--primary)/0.35)]"
+            className="h-16 w-auto transition duration-300 group-hover:drop-shadow-[0_0_10px_rgb(var(--primary)/0.4)]"
           />
         </Link>
         <nav className="hidden gap-6 text-sm md:flex">
