@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { CircleUserRound, Menu, Search, ShoppingCart } from "lucide-react";
 import { useCartStore } from "@/stores/useCartStore";
 import { Button } from "@/components/ui/button";
@@ -20,7 +21,16 @@ export function Header() {
   return (
     <header className="sticky top-[calc(var(--promo-height)+env(safe-area-inset-top))] z-40 border-b border-primary/30 bg-bg/90 backdrop-blur">
       <div className="mx-auto flex h-16 w-full max-w-[1280px] items-center justify-between px-4 md:px-8">
-        <Link href="/" className="font-semibold tracking-tight">sebdental</Link>
+        <Link href="/" className="group inline-flex items-center" aria-label="Sdental acasă">
+          <Image
+            src="/Sdental.png"
+            alt="Sdental"
+            width={220}
+            height={56}
+            priority
+            className="h-10 w-auto transition duration-300 group-hover:drop-shadow-[0_0_8px_rgb(var(--primary)/0.35)]"
+          />
+        </Link>
         <nav className="hidden gap-6 text-sm md:flex">
           {links.map(([href, label]) => (
             <Link key={href} href={href} className="text-fg/75 transition hover:text-fg">{label}</Link>
