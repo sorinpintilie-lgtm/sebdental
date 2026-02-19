@@ -45,16 +45,16 @@ export function HeroPanel() {
           preload="metadata"
           poster={primary.image}
         >
-          <source src="/Woman-At-Dental-Chair-In-Dental-Clinic-Dental-Extr-4K-2025-12-17-06-16-53-Utc.mp4" type="video/mp4" />
+          <source src="/professional-dental-implant-drill-kit-drill-nozzl-2026-01-21-17-32-07-utc.mp4" type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/35 to-transparent" />
-        <div className="absolute inset-x-0 bottom-0 p-3">
-          <div className="rounded-xl border border-primary/35 bg-white/95 p-3 shadow-[0_14px_28px_rgb(var(--fg)/0.24)] backdrop-blur-sm">
-            <h1 className="text-base leading-snug text-fg">{primary.title}</h1>
-            <p className="mt-1 text-xs text-fg/75">{primary.subtitle}</p>
-            <div className="mt-3 grid grid-cols-2 gap-2">
-              <Link href="/produse" className="rounded-lg bg-primary px-3 py-2 text-center text-xs font-semibold text-black shadow-sm">Vezi produse</Link>
-              <Link href="/comanda-rapida" className="rounded-lg border border-black/20 bg-black/5 px-3 py-2 text-center text-xs text-black">Comandă rapidă</Link>
+        <div className="absolute inset-x-0 bottom-0 p-2.5">
+          <div className="rounded-lg border border-primary/35 bg-white/94 p-2.5 shadow-[0_10px_22px_rgb(var(--fg)/0.22)] backdrop-blur-sm">
+            <h1 className="text-sm leading-snug text-fg line-clamp-2">{primary.title}</h1>
+            <p className="mt-1 text-[11px] text-fg/70 line-clamp-1">{primary.subtitle}</p>
+            <div className="mt-2 grid grid-cols-2 gap-1.5">
+              <Link href="/produse" className="rounded-md bg-primary px-2.5 py-1.5 text-center text-[11px] font-semibold text-black shadow-sm">Produse</Link>
+              <Link href="/comanda-rapida" className="rounded-md border border-black/20 bg-black/5 px-2.5 py-1.5 text-center text-[11px] text-black">Rapid</Link>
             </div>
           </div>
         </div>
@@ -80,7 +80,7 @@ export function HeroPanel() {
           preload="metadata"
           poster={primary.image}
         >
-          <source src="/Woman-At-Dental-Chair-In-Dental-Clinic-Dental-Extr-4K-2025-12-17-06-16-53-Utc.mp4" type="video/mp4" />
+          <source src="/professional-dental-implant-drill-kit-drill-nozzl-2026-01-21-17-32-07-utc.mp4" type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-gradient-to-r from-black/72 via-black/45 to-black/20" />
         <motion.div
