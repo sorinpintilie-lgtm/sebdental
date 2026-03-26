@@ -1,0 +1,23 @@
+[
+  {
+    "product_code": "500 343 201 160 010",
+    "code_type": "numeric",
+    "page": 4,
+    "y": 148.94830322265625,
+    "x": 94.94100570678711,
+    "yt_reference": null,
+    "working_diameter_mm_detected": null,
+    "material": "tungsten carbide",
+    "coating": "without coating",
+    "shank_diameter_mm": 3.0,
+    "overall_length_mm": 43.0,
+    "form": "cylindric radial cutter",
+    "blades_from_code": 1,
+    "extra_length_mm": 16.0,
+    "working_diameter_mm_from_code": 1.0,
+    "image_file": null,
+    "image_width_px": null,
+    "image_height_px": null,
+    "catalog_file": "Kompatibel zu IVOCLAR.pdf"
+  }
+]

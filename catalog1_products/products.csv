@@ -1,0 +1,10 @@
+product_code,page,y,yt_reference,working_diameter_mm_detected,material,coating,shank_diameter_mm,overall_length_mm,form,blades_from_code,extra_length_mm,working_diameter_mm_from_code,image_file
+500 448 201A 150 010,5,709.9353332519531,YT401,1.0,tungsten carbide,without coating,4.0,48.0,cylindric radial cutter,1,15.0,1.0,catalog1_products/images/page05_xref74.png
+500 448 201A 200 020,5,709.9353332519531,YT402,2.0,tungsten carbide,without coating,4.0,48.0,cylindric radial cutter,1,20.0,2.0,catalog1_products/images/page05_xref73.png
+500 448 202A 100 006,5,709.9353332519531,YT402,0.6,tungsten carbide,without coating,4.0,48.0,cylindric radial cutter,2,10.0,0.6,catalog1_products/images/page05_xref75.png
+530 648 204A 120 020,5,101.48158645629883,,,tungsten carbide,ac-blue,6.0,48.0,cylindric radial cutter,4,12.0,2.0,
+540 448 202A 040 006,5,420.3113250732422,YT206,0.6,tungsten carbide,ac-fire,4.0,48.0,cylindric radial cutter,2,4.0,0.6,catalog1_products/images/page05_xref68.png
+540 448 202A 080 010,5,420.3113250732422,YT202,1.0,tungsten carbide,ac-fire,4.0,48.0,cylindric radial cutter,2,8.0,1.0,catalog1_products/images/page05_xref72.png
+540 448 202A 120 020,5,420.3113250732422,YT201,2.0,tungsten carbide,ac-fire,4.0,48.0,cylindric radial cutter,2,12.0,2.0,catalog1_products/images/page05_xref71.png
+550 448 202A 150 010,5,709.9353332519531,YT108,1.0,tungsten carbide,ac-crystal,4.0,48.0,cylindric radial cutter,2,15.0,1.0,catalog1_products/images/page05_xref70.png
+550 448 202A 200 020,5,709.9353332519531,YT107,2.0,tungsten carbide,ac-crystal,4.0,48.0,cylindric radial cutter,2,20.0,2.0,catalog1_products/images/page05_xref69.png

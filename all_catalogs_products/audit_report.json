@@ -1,0 +1,108 @@
+{
+  "totals": {
+    "products": 1190,
+    "catalogs": 12,
+    "diameter_mismatch_rows": 0,
+    "families_with_partial_image_coverage": 0,
+    "heavily_reused_images_6plus": 2
+  },
+  "catalog_code_coverage": [
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "pdf_codes_detected": 404,
+      "extracted_codes": 404,
+      "missing_in_extraction": 0,
+      "extra_not_found_in_pdf": 0
+    },
+    {
+      "catalog_file": "CHIRURGIE.pdf",
+      "pdf_codes_detected": 120,
+      "extracted_codes": 120,
+      "missing_in_extraction": 0,
+      "extra_not_found_in_pdf": 0
+    },
+    {
+      "catalog_file": "Kompatibel zu Amann Girrbach.pdf",
+      "pdf_codes_detected": 1,
+      "extracted_codes": 1,
+      "missing_in_extraction": 0,
+      "extra_not_found_in_pdf": 0
+    },
+    {
+      "catalog_file": "Kompatibel zu IVOCLAR.pdf",
+      "pdf_codes_detected": 1,
+      "extracted_codes": 1,
+      "missing_in_extraction": 0,
+      "extra_not_found_in_pdf": 0
+    },
+    {
+      "catalog_file": "Kompatibel zu Ivoclar &amp; Wieland.pdf",
+      "pdf_codes_detected": 20,
+      "extracted_codes": 20,
+      "missing_in_extraction": 0,
+      "extra_not_found_in_pdf": 0
+    },
+    {
+      "catalog_file": "Kompatibel zu Roland.pdf",
+      "pdf_codes_detected": 11,
+      "extracted_codes": 11,
+      "missing_in_extraction": 0,
+      "extra_not_found_in_pdf": 0
+    },
+    {
+      "catalog_file": "Kompatibel zu Sirona.pdf",
+      "pdf_codes_detected": 5,
+      "extracted_codes": 5,
+      "missing_in_extraction": 0,
+      "extra_not_found_in_pdf": 0
+    },
+    {
+      "catalog_file": "Kompatibel zu VHF-V4.pdf",
+      "pdf_codes_detected": 5,
+      "extracted_codes": 5,
+      "missing_in_extraction": 0,
+      "extra_not_found_in_pdf": 0
+    },
+    {
+      "catalog_file": "Kompatibel zu VHF-V5.pdf",
+      "pdf_codes_detected": 4,
+      "extracted_codes": 4,
+      "missing_in_extraction": 0,
+      "extra_not_found_in_pdf": 0
+    },
+    {
+      "catalog_file": "Kompatibel zu imes-icore, Schütz &amp; Kulzer 3mm.pdf",
+      "pdf_codes_detected": 13,
+      "extracted_codes": 13,
+      "missing_in_extraction": 0,
+      "extra_not_found_in_pdf": 0
+    },
+    {
+      "catalog_file": "LABORATOR (2).pdf",
+      "pdf_codes_detected": 595,
+      "extracted_codes": 595,
+      "missing_in_extraction": 0,
+      "extra_not_found_in_pdf": 0
+    },
+    {
+      "catalog_file": "catalog1.pdf",
+      "pdf_codes_detected": 11,
+      "extracted_codes": 11,
+      "missing_in_extraction": 0,
+      "extra_not_found_in_pdf": 0
+    }
+  ],
+  "missing_code_examples": {},
+  "diameter_mismatch_examples": [],
+  "family_partial_image_examples": [],
+  "heavily_reused_image_examples": [
+    {
+      "image_file": "all_catalogs_products/laborator-2/images/page30_xref776.png",
+      "uses": 6
+    },
+    {
+      "image_file": "all_catalogs_products/laborator-2/images/page12_xref317.png",
+      "uses": 6
+    }
+  ]
+}

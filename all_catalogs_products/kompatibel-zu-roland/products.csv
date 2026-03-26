@@ -1,0 +1,12 @@
+blades_from_code,catalog_file,coating,code_type,extra_length_mm,form,image_file,image_height_px,image_width_px,material,overall_length_mm,page,product_code,shank_diameter_mm,working_diameter_mm_detected,working_diameter_mm_from_code,x,y,yt_reference
+1,Kompatibel zu Roland.pdf,without coating,numeric,16.0,cylindric radial cutter,,,,tungsten carbide,43.0,4,500 343 201 160 010,3.0,,1.0,94.94100570678711,148.94830322265625,
+1,Kompatibel zu Roland.pdf,without coating,numeric,15.0,cylindric radial cutter,,,,tungsten carbide,48.0,5,500 448 201 150 010,4.0,1.0,1.0,204.52146911621094,221.26119232177734,
+1,Kompatibel zu Roland.pdf,without coating,numeric,20.0,cylindric radial cutter,,,,tungsten carbide,48.0,5,500 448 201 200 020,4.0,2.0,2.0,125.15349197387695,221.26119232177734,
+2,Kompatibel zu Roland.pdf,without coating,numeric,2.0,cylindric radial cutter,,,,tungsten carbide,48.0,6,500 448 202 020 003,4.0,0.3,0.3,442.7103729248047,221.81880950927734,
+2,Kompatibel zu Roland.pdf,without coating,numeric,10.0,cylindric radial cutter,,,,tungsten carbide,48.0,5,500 448 202 100 006,4.0,0.6,0.6,386.4430694580078,220.9381332397461,
+2,Kompatibel zu Roland.pdf,without coating,numeric,15.0,cylindric radial cutter,,,,tungsten carbide,48.0,6,500 448 202 150 010,4.0,1.0,1.0,283.97437286376953,221.81880950927734,
+2,Kompatibel zu Roland.pdf,without coating,numeric,15.0,cylindric radial cutter,,,,tungsten carbide,48.0,6,500 448 202 150 020,4.0,2.0,2.0,204.6063690185547,221.81880950927734,
+2,Kompatibel zu Roland.pdf,without coating,numeric,20.0,cylindric radial cutter,,,,tungsten carbide,48.0,6,500 448 202 200 020,4.0,2.0,2.0,125.2383918762207,221.81880950927734,
+4,Kompatibel zu Roland.pdf,ac-blue,numeric,12.0,cylindric radial cutter,,,,tungsten carbide,48.0,4,530 648 204 120 020,6.0,,2.0,170.2449722290039,552.3603210449219,
+2,Kompatibel zu Roland.pdf,ac-crystal,numeric,15.0,cylindric radial cutter,,,,tungsten carbide,48.0,5,550 448 202 150 010,4.0,1.0,1.0,205.24024963378906,534.2669372558594,
+2,Kompatibel zu Roland.pdf,ac-crystal,numeric,20.0,cylindric radial cutter,,,,tungsten carbide,48.0,5,550 448 202 200 020,4.0,2.0,2.0,125.87228012084961,534.2669372558594,

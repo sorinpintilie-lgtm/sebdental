@@ -1,0 +1,48 @@
+{
+  "store_products_total": 422,
+  "source_rows_total": 1190,
+  "source_rows_with_external_image": 422,
+  "store_without_source_match": 0,
+  "diameter_mismatch_count_valid_ref": 0,
+  "unknown_material_count": 135,
+  "unknown_grit_count": 357,
+  "unknown_color_count": 56,
+  "unknown_brand_count": 46,
+  "english_name_hits": 0,
+  "duplicate_sku_count": 0,
+  "duplicate_slug_count": 0,
+  "brand_distribution": {
+    "NTI": 217,
+    "Komet": 131,
+    "Nespecificat": 46,
+    "Meisinger": 13,
+    "Horico": 8,
+    "Busch": 7
+  },
+  "material_distribution": {
+    "Diamant": 21,
+    "Nespecificat": 135,
+    "Carbid": 266
+  },
+  "shape_distribution_top10": {
+    "Cilindrică cu tăiere radială": 132,
+    "Standard": 125,
+    "Cilindrică cu capăt drept": 108,
+    "Conică cu tăiere radială": 52,
+    "Cilindrică tip torus": 5
+  },
+  "grit_distribution": {
+    "Nespecificată": 357,
+    "Fină": 9,
+    "Grosieră": 2,
+    "Medie": 54
+  },
+  "external_image_match_distribution": {
+    "exact": 263,
+    "family_diameter_unique": 106,
+    "family_unique": 50,
+    "normalized": 3
+  },
+  "duplicate_sku_examples": [],
+  "duplicate_slug_examples": []
+}

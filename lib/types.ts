@@ -1,6 +1,6 @@
 export type ShankType = "FG" | "RA" | "HP";
 
-export type MaterialType = "Carbid" | "Diamant" | "Ceramică";
+export type MaterialType = "Carbid" | "Diamant" | "Ceramică" | "Nespecificat";
 
 export type StockStatus = "in_stock" | "low_stock" | "backorder";
 

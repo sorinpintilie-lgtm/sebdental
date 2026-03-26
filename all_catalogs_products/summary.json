@@ -1,0 +1,66 @@
+{
+  "catalogs_processed": 12,
+  "total_products_extracted": 1190,
+  "catalogs": [
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "products_extracted": 404,
+      "output_dir": "all_catalogs_products/cabinet-3"
+    },
+    {
+      "catalog_file": "catalog1.pdf",
+      "products_extracted": 11,
+      "output_dir": "all_catalogs_products/catalog1"
+    },
+    {
+      "catalog_file": "CHIRURGIE.pdf",
+      "products_extracted": 120,
+      "output_dir": "all_catalogs_products/chirurgie"
+    },
+    {
+      "catalog_file": "Kompatibel zu Amann Girrbach.pdf",
+      "products_extracted": 1,
+      "output_dir": "all_catalogs_products/kompatibel-zu-amann-girrbach"
+    },
+    {
+      "catalog_file": "Kompatibel zu imes-icore, Schütz &amp; Kulzer 3mm.pdf",
+      "products_extracted": 13,
+      "output_dir": "all_catalogs_products/kompatibel-zu-imes-icore-schutz-amp-kulzer-3mm"
+    },
+    {
+      "catalog_file": "Kompatibel zu Ivoclar &amp; Wieland.pdf",
+      "products_extracted": 20,
+      "output_dir": "all_catalogs_products/kompatibel-zu-ivoclar-amp-wieland"
+    },
+    {
+      "catalog_file": "Kompatibel zu IVOCLAR.pdf",
+      "products_extracted": 1,
+      "output_dir": "all_catalogs_products/kompatibel-zu-ivoclar"
+    },
+    {
+      "catalog_file": "Kompatibel zu Roland.pdf",
+      "products_extracted": 11,
+      "output_dir": "all_catalogs_products/kompatibel-zu-roland"
+    },
+    {
+      "catalog_file": "Kompatibel zu Sirona.pdf",
+      "products_extracted": 5,
+      "output_dir": "all_catalogs_products/kompatibel-zu-sirona"
+    },
+    {
+      "catalog_file": "Kompatibel zu VHF-V4.pdf",
+      "products_extracted": 5,
+      "output_dir": "all_catalogs_products/kompatibel-zu-vhf-v4"
+    },
+    {
+      "catalog_file": "Kompatibel zu VHF-V5.pdf",
+      "products_extracted": 4,
+      "output_dir": "all_catalogs_products/kompatibel-zu-vhf-v5"
+    },
+    {
+      "catalog_file": "LABORATOR (2).pdf",
+      "products_extracted": 595,
+      "output_dir": "all_catalogs_products/laborator-2"
+    }
+  ]
+}

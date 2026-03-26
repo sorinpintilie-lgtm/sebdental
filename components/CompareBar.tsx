@@ -16,6 +16,13 @@ export function CompareBar() {
   const { ids, clear } = useCompareStore();
   const [open, setOpen] = useState(false);
   const compareProducts = useMemo(() => products.filter((p) => ids.includes(p.id)).slice(0, 4), [ids]);
+
+  const stockLabel = (status: string) => {
+    if (status === "in_stock") return "În stoc";
+    if (status === "low_stock") return "Stoc limitat";
+    return "La comandă";
+  };
+
   if (ids.length < 2) return null;
 
   return (
@@ -55,7 +62,7 @@ export function CompareBar() {
                   ["Ø", (p: (typeof compareProducts)[number]) => `${p.diameterMm} mm`],
                   ["ISO", (p: (typeof compareProducts)[number]) => p.isoCode],
                   ["RPM recomandat", (p: (typeof compareProducts)[number]) => p.recommendedRpm],
-                  ["Stoc", (p: (typeof compareProducts)[number]) => p.stockStatus],
+                  ["Stoc", (p: (typeof compareProducts)[number]) => stockLabel(p.stockStatus)],
                   ["Preț", (p: (typeof compareProducts)[number]) => `${p.priceLei} lei`],
                 ].map(([label, get]) => (
                   <tr key={label as string} className="border-b border-fg/10">

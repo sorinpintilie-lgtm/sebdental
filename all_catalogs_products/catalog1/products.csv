@@ -1,0 +1,12 @@
+blades_from_code,catalog_file,coating,code_type,extra_length_mm,form,image_file,image_height_px,image_width_px,material,overall_length_mm,page,product_code,shank_diameter_mm,working_diameter_mm_detected,working_diameter_mm_from_code,x,y,yt_reference
+1,catalog1.pdf,without coating,numeric,16.0,cylindric radial cutter,,,,tungsten carbide,43.0,4,500 343 201 160 010,3.0,,1.0,94.94100570678711,148.94830322265625,
+1,catalog1.pdf,without coating,numeric,15.0,cylindric radial cutter,,,,tungsten carbide,48.0,5,500 448 201A 150 010,4.0,1.0,1.0,449.4555358886719,709.9353332519531,YT401
+1,catalog1.pdf,without coating,numeric,20.0,cylindric radial cutter,,,,tungsten carbide,48.0,5,500 448 201A 200 020,4.0,2.0,2.0,370.0875549316406,709.9353332519531,YT402
+2,catalog1.pdf,without coating,numeric,10.0,cylindric radial cutter,,,,tungsten carbide,48.0,5,500 448 202A 100 006,4.0,0.6,0.6,528.8236694335938,709.9353332519531,YT105
+4,catalog1.pdf,ac-blue,numeric,12.0,cylindric radial cutter,,,,tungsten carbide,48.0,4,530 648 204 120 020,6.0,,2.0,170.2449722290039,552.3603210449219,
+4,catalog1.pdf,ac-blue,numeric,12.0,cylindric radial cutter,,,,tungsten carbide,48.0,5,530 648 204A 120 020,6.0,,2.0,85.50830459594727,101.48158645629883,
+2,catalog1.pdf,ac-fire,numeric,4.0,cylindric radial cutter,,,,tungsten carbide,48.0,5,540 448 202A 040 006,4.0,0.6,0.6,283.8331604003906,420.3113250732422,
+2,catalog1.pdf,ac-fire,numeric,8.0,cylindric radial cutter,,,,tungsten carbide,48.0,5,540 448 202A 080 010,4.0,1.0,1.0,204.46515655517578,420.3113250732422,YT202
+2,catalog1.pdf,ac-fire,numeric,12.0,cylindric radial cutter,,,,tungsten carbide,48.0,5,540 448 202A 120 020,4.0,2.0,2.0,125.09718322753906,420.3113250732422,YT201
+2,catalog1.pdf,ac-crystal,numeric,15.0,cylindric radial cutter,,,,tungsten carbide,48.0,5,550 448 202A 150 010,4.0,1.0,1.0,205.1737518310547,709.9353332519531,YT108
+2,catalog1.pdf,ac-crystal,numeric,20.0,cylindric radial cutter,,,,tungsten carbide,48.0,5,550 448 202A 200 020,4.0,2.0,2.0,125.8057746887207,709.9353332519531,YT107

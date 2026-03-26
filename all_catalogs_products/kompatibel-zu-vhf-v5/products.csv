@@ -1,0 +1,5 @@
+blades_from_code,catalog_file,coating,code_type,extra_length_mm,form,image_file,image_height_px,image_width_px,material,overall_length_mm,page,product_code,profile_code,shank_diameter_mm,system_code,working_diameter_mm_detected,working_diameter_mm_from_code,x,y,yt_reference
+0,Kompatibel zu VHF-V5.pdf,without coating,numeric,9.1,cylindric radial cutter,,,,,35.0,6,806 335 200 091 010,,3.0,,1.0,1.0,200.9574737548828,221.59468841552734,
+0,Kompatibel zu VHF-V5.pdf,without coating,numeric,18.1,cylindric radial cutter,,,,,35.0,6,806 335 200 181 024,,3.0,,2.4,2.4,124.42149353027344,221.59468841552734,
+0,Kompatibel zu VHF-V5.pdf,without coating,numeric,9.1,radial cutter conical,,,,,35.0,6,806 335 300 091 006,,3.0,,0.6,0.6,277.4934844970703,221.59468841552734,
+2,Kompatibel zu VHF-V5.pdf,,alpha,,,,,,,,5,V5 2R0 U06,2R0,,V5,,0.6,200.20740509033203,469.9699249267578,

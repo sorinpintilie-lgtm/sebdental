@@ -1,0 +1,1017 @@
+{
+  "products_total": 1190,
+  "images_total": 450,
+  "matched_products": 472,
+  "unmatched_products": 718,
+  "match_type_counts": {
+    "exact": 297,
+    "family_diameter_unique": 121,
+    "family_unique": 51,
+    "none": 718,
+    "normalized": 3
+  },
+  "unparsed_image_files": 0,
+  "unparsed_image_examples": [],
+  "unmatched_product_examples": [
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "010 204 010 001 060",
+      "family": "010 204 010"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "010 204 010 002 060",
+      "family": "010 204 010"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "010 204 010 200 060",
+      "family": "010 204 010"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "010 204 131 001 050",
+      "family": "010 204 131"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "010 300 010 001 060",
+      "family": "010 300 010"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "010 300 010 300 060",
+      "family": "010 300 010"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "010 300 010 500 060",
+      "family": "010 300 010"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "010 300 010 700 060",
+      "family": "010 300 010"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "010 300 131 001 050",
+      "family": "010 300 131"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "010 300 237 300 025",
+      "family": "010 300 237"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "010 300 237 500 025",
+      "family": "010 300 237"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "010 300 237 700 025",
+      "family": "010 300 237"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "330 104 604 391 080",
+      "family": "330 104 604"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 104 001 258 040",
+      "family": "500 104 001"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 104 178 338 016",
+      "family": "500 104 178"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 104 194 140 040",
+      "family": "500 104 194"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 104 194 223 070",
+      "family": "500 104 194"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 104 201 190 060",
+      "family": "500 104 201"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 104 254 297 012",
+      "family": "500 104 254"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 104 254 297 016",
+      "family": "500 104 254"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 104 254 298 012",
+      "family": "500 104 254"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 104 255 298 012",
+      "family": "500 104 255"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 104 274 140 060",
+      "family": "500 104 274"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 104 278 140 040",
+      "family": "500 104 278"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 105 001 258 023",
+      "family": "500 105 001"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 105 001 258 027",
+      "family": "500 105 001"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 105 001 258 031",
+      "family": "500 105 001"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 105 001 258 035",
+      "family": "500 105 001"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 105 001 258 040",
+      "family": "500 105 001"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 204 001 071 018",
+      "family": "500 204 001"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 204 001 175 018",
+      "family": "500 204 001"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 204 001 175 029",
+      "family": "500 204 001"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 204 010 001 010",
+      "family": "500 204 010"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 204 010 001 014",
+      "family": "500 204 010"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 204 010 001 016",
+      "family": "500 204 010"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 204 010 001 018",
+      "family": "500 204 010"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 204 218 006 018",
+      "family": "500 204 218"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 204 274 190 040",
+      "family": "500 204 274"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 204 274 190 060",
+      "family": "500 204 274"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 204 298 072 021",
+      "family": "500 204 298"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 205 001 175 010",
+      "family": "500 205 001"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 205 001 175 014",
+      "family": "500 205 001"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 205 001 175 018",
+      "family": "500 205 001"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 205 001 175 023",
+      "family": "500 205 001"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 205 001 251 027",
+      "family": "500 205 001"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 205 001 251 031",
+      "family": "500 205 001"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 205 001 251 035",
+      "family": "500 205 001"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 205 001 251 040",
+      "family": "500 205 001"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 205 254 297 012",
+      "family": "500 205 254"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 205 254 297 016",
+      "family": "500 205 254"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 205 254 298 012",
+      "family": "500 205 254"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 205 255 298 012",
+      "family": "500 205 255"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 207 697 001 010",
+      "family": "500 207 697"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 207 697 001 012",
+      "family": "500 207 697"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 207 697 001 014",
+      "family": "500 207 697"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 207 697 001 016",
+      "family": "500 207 697"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 207 697 001 018",
+      "family": "500 207 697"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 314 001 071 023",
+      "family": "500 314 001"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 314 010 001 010",
+      "family": "500 314 010"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 314 010 001 012",
+      "family": "500 314 010"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 314 010 001 014",
+      "family": "500 314 010"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 314 010 001 016",
+      "family": "500 314 010"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 314 010 001 018",
+      "family": "500 314 010"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 314 107 006 010",
+      "family": "500 314 107"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 314 107 006 014",
+      "family": "500 314 107"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 314 107 006 016",
+      "family": "500 314 107"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 314 107 008 014",
+      "family": "500 314 107"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 314 110 006 010",
+      "family": "500 314 110"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 314 110 006 012",
+      "family": "500 314 110"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 314 110 006 014",
+      "family": "500 314 110"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 314 137 006 014",
+      "family": "500 314 137"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 314 141 080 012",
+      "family": "500 314 141"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 314 141 080 014",
+      "family": "500 314 141"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 314 158 072 012",
+      "family": "500 314 158"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 314 159 042 010",
+      "family": "500 314 159"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 314 159 071 010",
+      "family": "500 314 159"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 314 166 032 014",
+      "family": "500 314 166"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 314 168 006 016",
+      "family": "500 314 168"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 314 194 006 016",
+      "family": "500 314 194"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 314 198 072 023",
+      "family": "500 314 198"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 314 215 072 014",
+      "family": "500 314 215"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 314 219 295 016",
+      "family": "500 314 219"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 314 237 006 012",
+      "family": "500 314 237"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 314 238 072 014",
+      "family": "500 314 238"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 314 243 072 009",
+      "family": "500 314 243"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 314 243 072 010",
+      "family": "500 314 243"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 314 243 072 012",
+      "family": "500 314 243"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 314 249 032 012",
+      "family": "500 314 249"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 314 249 080 012",
+      "family": "500 314 249"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 314 277 032 014",
+      "family": "500 314 277"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 314 277 032 018",
+      "family": "500 314 277"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 314 277 032 023",
+      "family": "500 314 277"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 314 277 042 023",
+      "family": "500 314 277"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 314 277 080 023",
+      "family": "500 314 277"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 314 288 072 010",
+      "family": "500 314 288"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 314 288 072 012",
+      "family": "500 314 288"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 314 289 032 012",
+      "family": "500 314 289"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 314 289 072 012",
+      "family": "500 314 289"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 314 289 080 012",
+      "family": "500 314 289"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 314 290 072 014",
+      "family": "500 314 290"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 314 294 006 010",
+      "family": "500 314 294"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 314 544 072 023",
+      "family": "500 314 544"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 314 699 071 008",
+      "family": "500 314 699"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 315 001 175 010",
+      "family": "500 315 001"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 315 001 175 012",
+      "family": "500 315 001"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 315 001 175 014",
+      "family": "500 315 001"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 315 001 175 016",
+      "family": "500 315 001"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 315 001 175 018",
+      "family": "500 315 001"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 315 001 175 021",
+      "family": "500 315 001"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 315 001 175 023",
+      "family": "500 315 001"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 315 107 008 014",
+      "family": "500 315 107"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 315 139 008 014",
+      "family": "500 315 139"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 316 001 291 010",
+      "family": "500 316 001"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 316 139 015 012",
+      "family": "500 316 139"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 316 178 338 016",
+      "family": "500 316 178"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 316 219 295 016",
+      "family": "500 316 219"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 316 255 298 012",
+      "family": "500 316 255"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 317 249 032 014",
+      "family": "500 317 249"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 317 249 032 023",
+      "family": "500 317 249"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 317 249 072 014",
+      "family": "500 317 249"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 317 249 072 023",
+      "family": "500 317 249"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 317 277 032 014",
+      "family": "500 317 277"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 317 277 032 023",
+      "family": "500 317 277"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 317 277 072 014",
+      "family": "500 317 277"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "500 317 277 072 023",
+      "family": "500 317 277"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "510 204 194 019 016",
+      "family": "510 204 194"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "510 205 001 258 035",
+      "family": "510 205 001"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "510 205 001 258 040",
+      "family": "510 205 001"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "510 316 178 338 016",
+      "family": "510 316 178"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "635 204 001 505 030",
+      "family": "635 204 001"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "635 204 161 505 028",
+      "family": "635 204 161"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "635 204 288 505 025",
+      "family": "635 204 288"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "635 204 297 505 030",
+      "family": "635 204 297"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "635 314 001 505 030",
+      "family": "635 314 001"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "635 314 161 505 028",
+      "family": "635 314 161"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "635 314 171 505 025",
+      "family": "635 314 171"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "635 314 288 505 025",
+      "family": "635 314 288"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "635 314 297 505 030",
+      "family": "635 314 297"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "655 204 001 523 030",
+      "family": "655 204 001"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "655 204 001 523 040",
+      "family": "655 204 001"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "655 204 161 523 028",
+      "family": "655 204 161"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "655 204 171 523 025",
+      "family": "655 204 171"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "655 204 288 523 025",
+      "family": "655 204 288"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "655 204 288 523 035",
+      "family": "655 204 288"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "658 204 030 490 050",
+      "family": "658 204 030"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "658 204 030 492 050",
+      "family": "658 204 030"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "658 204 030 502 060",
+      "family": "658 204 030"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "658 204 030 503 060",
+      "family": "658 204 030"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "658 204 030 512 060",
+      "family": "658 204 030"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "658 204 030 513 060",
+      "family": "658 204 030"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "658 204 030 533 060",
+      "family": "658 204 030"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "658 204 034 512 060",
+      "family": "658 204 034"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "658 204 243 300 040",
+      "family": "658 204 243"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "658 204 243 500 040",
+      "family": "658 204 243"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "658 204 243 503 030",
+      "family": "658 204 243"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "658 204 243 512 030",
+      "family": "658 204 243"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "658 204 243 512 050",
+      "family": "658 204 243"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "658 204 243 513 030",
+      "family": "658 204 243"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "658 204 243 522 035",
+      "family": "658 204 243"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "658 204 243 533 030",
+      "family": "658 204 243"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "658 300 030 490 050",
+      "family": "658 300 030"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "658 300 030 492 050",
+      "family": "658 300 030"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "658 300 036 300 060",
+      "family": "658 300 036"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "658 300 036 500 060",
+      "family": "658 300 036"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "658 314 243 503 030",
+      "family": "658 314 243"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "658 314 243 513 030",
+      "family": "658 314 243"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "803 204 011 495 055",
+      "family": "803 204 011"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "803 204 011 505 055",
+      "family": "803 204 011"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "803 204 030 495 060",
+      "family": "803 204 030"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "803 204 030 501 060",
+      "family": "803 204 030"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "803 204 030 505 060",
+      "family": "803 204 030"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "803 204 030 511 060",
+      "family": "803 204 030"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "803 204 030 521 060",
+      "family": "803 204 030"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "803 204 243 495 030",
+      "family": "803 204 243"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "803 204 243 495 040",
+      "family": "803 204 243"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "803 204 243 505 030",
+      "family": "803 204 243"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "803 204 243 505 040",
+      "family": "803 204 243"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "803 204 243 511 040",
+      "family": "803 204 243"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "803 314 243 495 030",
+      "family": "803 314 243"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "803 314 243 505 030",
+      "family": "803 314 243"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "806 104 242 524 035",
+      "family": "806 104 242"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "806 104 242 524 040",
+      "family": "806 104 242"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "806 104 242 524 050",
+      "family": "806 104 242"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "806 104 350 524 220",
+      "family": "806 104 350"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "806 204 001 514 018",
+      "family": "806 204 001"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "806 204 001 514 023",
+      "family": "806 204 001"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "806 204 001 514 029",
+      "family": "806 204 001"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "806 204 001 524 018",
+      "family": "806 204 001"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "806 204 001 524 023",
+      "family": "806 204 001"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "806 204 001 524 029",
+      "family": "806 204 001"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "806 204 068 524 040",
+      "family": "806 204 068"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "806 204 068 524 050",
+      "family": "806 204 068"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "806 204 166 504 016",
+      "family": "806 204 166"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "806 204 166 514 016",
+      "family": "806 204 166"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "806 204 166 524 016",
+      "family": "806 204 166"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "806 204 249 504 012",
+      "family": "806 204 249"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "806 204 249 514 012",
+      "family": "806 204 249"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "806 204 249 524 012",
+      "family": "806 204 249"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "806 204 250 504 012",
+      "family": "806 204 250"
+    },
+    {
+      "catalog_file": "CABINET (3).pdf",
+      "product_code": "806 204 250 514 012",
+      "family": "806 204 250"
+    }
+  ]
+}
