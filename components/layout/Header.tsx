@@ -19,7 +19,7 @@ export function Header() {
   const count = useCartStore((s) => s.items.reduce((acc, i) => acc + i.qty, 0));
 
   return (
-    <header className="sticky top-[calc(var(--promo-height)+env(safe-area-inset-top))] z-40 border-b border-primary/30 bg-bg/90 backdrop-blur">
+    <header className="sticky top-0 z-40 border-b border-primary/30 bg-bg/90 backdrop-blur">
       <div className="mx-auto flex h-20 w-full max-w-[1280px] items-center justify-between px-4 md:px-8">
         <Link href="/" className="group inline-flex items-center" aria-label="Sdental acasă">
           <Image
