@@ -1,3 +1,13 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "GDPR",
+  description: "Informații privind prelucrarea datelor personale în platforma SebDental.",
+  alternates: {
+    canonical: "/gdpr",
+  },
+};
+
 export default function GdprPage() {
   return (
     <section className="max-w-3xl space-y-3 text-sm">

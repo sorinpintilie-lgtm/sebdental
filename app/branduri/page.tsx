@@ -1,5 +1,15 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import { brands } from "@/data/brands";
+
+export const metadata: Metadata = {
+  title: "Branduri de freze dentare",
+  description:
+    "Descoperă brandurile de freze dentare disponibile în stoc și accesează rapid produsele pentru fiecare producător.",
+  alternates: {
+    canonical: "/branduri",
+  },
+};
 
 export default function BranduriPage() {
   return (

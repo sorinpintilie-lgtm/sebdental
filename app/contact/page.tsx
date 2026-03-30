@@ -1,3 +1,13 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact SebDental",
+  description: "Contactează echipa SebDental pentru selecție de freze dentare, suport tehnic, oferte și informații despre livrare.",
+  alternates: {
+    canonical: "/contact",
+  },
+};
+
 export default function ContactPage() {
   return (
     <section className="space-y-8">

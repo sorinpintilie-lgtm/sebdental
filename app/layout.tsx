@@ -8,6 +8,7 @@ import { SearchPalette } from "@/components/SearchPalette";
 import { CartDrawer } from "@/components/CartDrawer";
 import { CompareBar } from "@/components/CompareBar";
 import { ScrollProgress } from "@/components/ScrollProgress";
+import { absoluteUrl, DEFAULT_DESCRIPTION, DEFAULT_KEYWORDS, DEFAULT_OG_IMAGE, DEFAULT_TITLE, SITE_NAME, SITE_URL } from "@/lib/seo";
 
 const sora = Sora({
   variable: "--font-sora",
@@ -25,8 +26,49 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "sebdental",
-  description: "Soluție practică pentru comenzi rapide de freze dentare.",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: `${DEFAULT_TITLE} | ${SITE_NAME}`,
+    template: `%s | ${SITE_NAME}`,
+  },
+  description: DEFAULT_DESCRIPTION,
+  keywords: DEFAULT_KEYWORDS,
+  alternates: {
+    canonical: "/",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
+  openGraph: {
+    type: "website",
+    locale: "ro_RO",
+    siteName: SITE_NAME,
+    title: `${DEFAULT_TITLE} | ${SITE_NAME}`,
+    description: DEFAULT_DESCRIPTION,
+    url: absoluteUrl("/"),
+    images: [
+      {
+        url: absoluteUrl(DEFAULT_OG_IMAGE),
+        width: 1200,
+        height: 630,
+        alt: "SebDental - catalog freze dentare",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${DEFAULT_TITLE} | ${SITE_NAME}`,
+    description: DEFAULT_DESCRIPTION,
+    images: [absoluteUrl(DEFAULT_OG_IMAGE)],
+  },
 };
 
 export default function RootLayout({

@@ -1,23 +1,58 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import { products } from "@/data/products";
 import { brands } from "@/data/brands";
 import { ProductCard } from "@/components/ProductCard";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
+type ProduseSearchParams = {
+  brand?: string;
+  compat?: string;
+  q?: string;
+  sort?: string;
+  min?: string;
+  max?: string;
+  diametru?: string;
+  color?: string;
+  tip?: string;
+};
+
+export async function generateMetadata({
+  searchParams,
+}: {
+  searchParams: Promise<ProduseSearchParams>;
+}): Promise<Metadata> {
+  const params = await searchParams;
+  const query = params.q?.trim();
+  const hasFiltering = Object.values(params).some((v) => Boolean(v && v.trim().length > 0));
+
+  const title = query ? `Rezultate pentru „${query}”` : "Catalog freze dentare";
+  const description = query
+    ? `Rezultate pentru ${query} în catalogul de freze dentare. Filtrare după compatibilitate, diametru, granulație și brand.`
+    : "Catalog de freze dentare cu filtre după brand, compatibilitate FG/RA/HP, diametru, tip și buget.";
+
+  return {
+    title,
+    description,
+    alternates: {
+      canonical: "/produse",
+    },
+    robots: hasFiltering
+      ? {
+          index: false,
+          follow: true,
+        }
+      : {
+          index: true,
+          follow: true,
+        },
+  };
+}
+
 export default async function ProdusePage({
   searchParams,
 }: {
-  searchParams: Promise<{
-    brand?: string;
-    compat?: string;
-    q?: string;
-    sort?: string;
-    min?: string;
-    max?: string;
-    diametru?: string;
-    color?: string;
-    tip?: string;
-  }>;
+  searchParams: Promise<ProduseSearchParams>;
 }) {
   const params = await searchParams;
   const brand = params.brand;

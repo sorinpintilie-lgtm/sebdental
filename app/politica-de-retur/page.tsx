@@ -1,3 +1,13 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Politica de retur",
+  description: "Condițiile de retur pentru produsele comandate din platforma SebDental.",
+  alternates: {
+    canonical: "/politica-de-retur",
+  },
+};
+
 export default function ReturPage() {
   return (
     <section className="max-w-3xl space-y-3 text-sm">

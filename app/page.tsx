@@ -1,8 +1,10 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import { products } from "@/data/products";
 import { brands } from "@/data/brands";
 import { HeroPanel } from "@/components/HeroPanel";
 import { ProductCard } from "@/components/ProductCard";
+import { absoluteUrl } from "@/lib/seo";
 
 const aplicatii = ["Zirconiu", "Ceramică", "Compozit", "Metal"];
 
@@ -12,11 +14,44 @@ const pachete = [
   { title: "Set restaurări directe", items: "Freze compozit pentru modelare și finisare", price: "369 lei" },
 ];
 
+export const metadata: Metadata = {
+  title: "Freze dentare pentru cabinet și laborator",
+  description:
+    "Comandă freze dentare după compatibilitate FG/RA/HP, granulație, diametru și brand. Catalog actualizat pentru zirconiu, ceramică, compozit și metal.",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "Freze dentare pentru cabinet și laborator",
+    description:
+      "Comandă freze dentare după compatibilitate FG/RA/HP, granulație, diametru și brand. Catalog actualizat pentru zirconiu, ceramică, compozit și metal.",
+    url: absoluteUrl("/"),
+  },
+};
+
 export default function HomePage() {
   const best = products.filter((p) => p.isBestseller).slice(0, 8);
+  const websiteJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "SebDental",
+    url: absoluteUrl("/"),
+    inLanguage: "ro-RO",
+    potentialAction: {
+      "@type": "SearchAction",
+      target: `${absoluteUrl("/produse")}?q={search_term_string}`,
+      "query-input": "required name=search_term_string",
+    },
+  };
 
   return (
     <div className="space-y-16">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(websiteJsonLd),
+        }}
+      />
       <section className="-mx-4 md:-mx-8">
         <HeroPanel />
       </section>

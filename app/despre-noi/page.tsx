@@ -1,3 +1,13 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Despre SebDental",
+  description: "SebDental ajută cabinetele și laboratoarele să comande freze dentare corecte, rapid și fără ambiguități.",
+  alternates: {
+    canonical: "/despre-noi",
+  },
+};
+
 export default function DespreNoiPage() {
   return (
     <section className="max-w-3xl space-y-4">

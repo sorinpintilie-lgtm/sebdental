@@ -5,6 +5,49 @@ import { ProductCard } from "@/components/ProductCard";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Headset, ShoppingCart, Truck } from "lucide-react";
+import type { Metadata } from "next";
+import { absoluteUrl } from "@/lib/seo";
+
+export function generateStaticParams() {
+  return products.map((product) => ({ slug: product.slug }));
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const product = getProductBySlug(slug);
+
+  if (!product) {
+    return {
+      title: "Produs indisponibil",
+      robots: {
+        index: false,
+        follow: false,
+      },
+    };
+  }
+
+  const description = `${product.name} (${product.sku}) - freză ${product.material.toLowerCase()} compatibilă ${product.shank}, granulație ${product.grit.toLowerCase()}, diametru ${product.diameterMm} mm.`;
+
+  return {
+    title: `${product.name} | ${product.brand}`,
+    description,
+    alternates: {
+      canonical: `/produs/${product.slug}`,
+    },
+    openGraph: {
+      type: "website",
+      title: `${product.name} | ${product.brand}`,
+      description,
+      url: absoluteUrl(`/produs/${product.slug}`),
+      images: [
+        {
+          url: absoluteUrl(product.image),
+          alt: product.name,
+        },
+      ],
+    },
+  };
+}
 
 export default async function ProdusPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
@@ -19,8 +62,75 @@ export default async function ProdusPage({ params }: { params: Promise<{ slug: s
     .filter((p) => p.id !== product.id && p.shank === product.shank && p.material !== product.material)
     .slice(0, 3);
 
+  const schemaAvailability =
+    product.stockStatus === "in_stock"
+      ? "https://schema.org/InStock"
+      : product.stockStatus === "low_stock"
+        ? "https://schema.org/LimitedAvailability"
+        : "https://schema.org/PreOrder";
+
+  const productJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: product.name,
+    sku: product.sku,
+    mpn: product.isoCode,
+    image: [absoluteUrl(product.image)],
+    description: `${product.name} pentru ${product.application.join(", ")}. Compatibilitate ${product.shank}, diametru ${product.diameterMm} mm, granulație ${product.grit.toLowerCase()}.`,
+    brand: {
+      "@type": "Brand",
+      name: product.brand,
+    },
+    offers: {
+      "@type": "Offer",
+      url: absoluteUrl(`/produs/${product.slug}`),
+      priceCurrency: "RON",
+      price: product.priceLei,
+      availability: schemaAvailability,
+      itemCondition: "https://schema.org/NewCondition",
+    },
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: Number(product.rating.toFixed(1)),
+      reviewCount: product.reviewCount,
+    },
+  };
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Acasă",
+        item: absoluteUrl("/"),
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Produse",
+        item: absoluteUrl("/produse"),
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: product.name,
+        item: absoluteUrl(`/produs/${product.slug}`),
+      },
+    ],
+  };
+
   return (
     <div className="space-y-10">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
       <section className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
         <div className="surface rounded-3xl p-8">
           <div className="mb-6 relative h-[320px] w-full overflow-hidden rounded-2xl border border-fg/10 bg-white">

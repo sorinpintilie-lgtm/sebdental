@@ -1,5 +1,15 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import { articles } from "@/data/articles";
+
+export const metadata: Metadata = {
+  title: "Ghiduri pentru alegerea frezelor dentare",
+  description:
+    "Articole practice pentru alegerea frezelor dentare: granulație, compatibilități FG/RA/HP, utilizare pe zirconiu, ceramică și compozit.",
+  alternates: {
+    canonical: "/ghiduri",
+  },
+};
 
 export default function GhiduriPage() {
   return (

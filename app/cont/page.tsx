@@ -1,3 +1,14 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contul meu",
+  description: "Zonă de client pentru administrarea comenzilor și listelor salvate.",
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
+
 export default function ContPage() {
   return (
     <section className="space-y-6">
