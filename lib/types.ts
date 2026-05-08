@@ -29,7 +29,7 @@ export interface Product {
   shape: string;
   diameterMm: number;
   recommendedRpm: string;
-  coating?: string;
+  coating?: string | null;
   stockStatus: StockStatus;
   isNew: boolean;
   isBestseller: boolean;
