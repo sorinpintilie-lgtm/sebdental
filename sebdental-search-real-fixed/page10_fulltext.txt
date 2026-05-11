@@ -1,0 +1,74 @@
+10
+REM-Aufnahme
+SEM picture  
+Cliché MEB 
+Microscopio electrónico  
+de barrido
+500 204 001 175 023
+500 204 001 175 027
+500 204 001 175 029
+500 205 001 175 010
+500 205 001 175 014
+500 205 001 175 018
+500 205 001 175 023
+Ø mm  
+2,3
+2,7
+2,9
+1,0
+1,4
+1,8
+2,3
+500 204 001 175 010 500 204 001 175 012 500 204 001 175 014 500 204 001 175 016 500 204 001 175 018 500 204 001 175 021
+Ø mm  
+1,0
+1,2
+1,4
+1,6
+1,8
+2,1
+BLUE CUT
+Hartmetall-Rosenbohrer
+Carbide round burs · Fraises carbure de tungstène · Fresa redonda de carburo de tungsteno
+•	Schlanker Hals für freie Sicht
+•	Schartenfreie, diamantgeschliffene Präzisionsschneiden
+•	Vibrationsarme Schneidenwinkel
+•	Sanfter Arbeitsdruck
+•	Slender neck for free visibility
+•	Nick-free, diamond-cut precision blades
+•	Spiral angles ensure low vibration
+•	Gentle to the pulp due to low working pressure required
+ 
+ 
+•	Col long pour la vue libre
+•	Des taillants de haute précision, rectifiés avec 
+des abrasifs diamantés étant sans bavures
+•	Des angles de coupe avec très peu de vibrations
+•	La pression à exercer sur l‘instrument étant minime,  
+la pulpe est préservée
+•	Mango delgado para una visibilidad clara
+•	El corte de precisión liso y con fresa diamantada 
+•	Ángulos de corte de baja vibración
+•	Presión de trabajo suave que protege la pulpa
+DAS
+ORIGINAL
+Hartmetall-Instrumente
+RA = 22,0 mm
+RA = 22,0 mm
+RAL = 26,0 mm
+500 315 001 175 010
+500 315 001 175 012 
+500 315 001 175 014
+500 315 001 175 016
+500 315 001 175 018
+500 315 001 175 021
+500 315 001 175 023
+Ø mm  
+1,0
+1,2
+1,4
+1,6
+1,8
+2,1
+2,3
+FGL = 21,0 mm

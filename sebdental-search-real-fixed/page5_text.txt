@@ -1,0 +1,57 @@
+540 448 202A 120 020
+540 448 202A 080 010
+540 448 202A 040 006
+Ø mm
+2,0
+1,0
+0,6
+YT201
+YT202
+YT206
+2-Schneider 2-blades
+550 448 202A 200 020
+550 448 202A 150 010
+Ø mm
+2,0
+1,0
+YT107
+YT108
+2-Schneider 2-blades
+500 448 201A 200 020
+500 448 201A 150 010
+500 448 202A 100 006
+2,0
+1,0
+0,6
+YT402
+YT401
+YT105
+1-Schneider 1-blade
+2-Schneider 2-blades
+ANSCHLAG-/DISTANZRING
+530 648 204A 120 020
+Für Werkzeuge aus dem UNIVERSAL-Programm. 
+Buchstabenkennung A nach der 9.Stelle = mit Anschlagring lagernd
+Auf Kundenwunsch können alle Werkzeuge mit Anschlag-/Distanzring 
+bei 4,0 mm und 6,0 mm Schaft-Durchmesser oder Kunststoffring 
+bei 3,0 mm Schaft-Durchmesser versehen werden.
+STOP/SPACER RING
+530 648 204A 120 020
+For tool of the universal range. The letter code A after the ninth digit  
+= in stock with stop/spacer ring. Upon customer request, all tools can 
+be provided with stop ring for 4,0 mm and 6,0 mm shank diameter
+or plastic ring for 3,0 mm shank diameter.
+COCR, TITAN
+AC-FIRE
+ZRO
+AC-KRISTALL
+PMMA
+Kompatibel zu
+compatible with
+Kompatibel zu
+compatible with
+500 448 202A 100 006
+0,6
+YT105
+2-Schneider 2-blades
+ZRO

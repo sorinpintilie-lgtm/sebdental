@@ -1,0 +1,146 @@
+"use client";
+
+import Link from "next/link";
+import Image from "next/image";
+import { motion } from "framer-motion";
+import { Search, RotateCcw, Package } from "lucide-react";
+import { useEffect, useState } from "react";
+
+const slides = [
+  {
+    title: "Flux clar pentru cabinet: găsești freza potrivită în câteva secunde.",
+    subtitle: "Compatibilitate, granulație și diametru vizibile din primul ecran.",
+    image: "/young-female-dentist-in-dental-office-dentist-at-2026-01-09-06-51-47-utc.jpg",
+  },
+  {
+    title: "Recomandări practice pentru reordonare rapidă și protocoale recurente.",
+    subtitle: "SKU și ISO la vedere, fără pași inutili.",
+    image: "/in-a-modern-medical-center-dentistry-checks-the-r-2026-01-05-05-35-48-utc.jpg",
+  },
+  {
+    title: "Portofoliu complet pentru zirconiu, ceramică, compozit și metal.",
+    subtitle: "Un singur loc pentru selecție rapidă, comenzi și comparație.",
+    image: "/with-the-help-of-high-tech-equipment-and-expert-sk-2026-01-05-04-52-49-utc.jpg",
+  },
+];
+
+const HERO_BADGE = "Freze dentare pentru protocoale clinice zilnice";
+const HERO_TITLE = "Flux clar pentru cabinet: găsești freza potrivită în câteva secunde.";
+const HERO_SUBTITLE = "Compatibilitate, granulație și diametru vizibile din primul ecran.";
+
+export function HeroPanel() {
+  const [index, setIndex] = useState(0);
+  const primary = slides[index];
+
+  useEffect(() => {
+    const t = setInterval(() => setIndex((v) => (v + 1) % slides.length), 5000);
+    return () => clearInterval(t);
+  }, []);
+
+  return (
+    <section className="space-y-5">
+      <div className="relative overflow-hidden rounded-3xl border border-primary/35 bg-surface md:hidden">
+        <video
+          className="h-[300px] w-full object-cover"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
+          poster={primary.image}
+        >
+          <source src="/professional-dental-implant-drill-kit-drill-nozzl-2026-01-21-17-32-07-utc.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/35 to-transparent" />
+        <div className="absolute inset-x-0 bottom-0 p-2.5">
+          <div className="rounded-lg border border-primary/35 bg-white/50 p-2.5 shadow-[0_10px_22px_rgb(var(--fg)/0.22)] backdrop-blur-md">
+            <h1 className="text-sm leading-snug text-fg line-clamp-2">{HERO_TITLE}</h1>
+            <p className="mt-1 text-[11px] text-fg/70 line-clamp-1">{HERO_SUBTITLE}</p>
+            <div className="mt-2 grid grid-cols-2 gap-1.5">
+              <Link href="/produse" className="rounded-md bg-primary px-2.5 py-1.5 text-center text-[11px] font-semibold text-black shadow-sm">Produse</Link>
+              <Link href="/comanda-rapida" className="rounded-md border border-black/20 bg-black/5 px-2.5 py-1.5 text-center text-[11px] text-black">Rapid</Link>
+            </div>
+          </div>
+        </div>
+        <div className="absolute right-3 top-3 flex gap-2">
+          {slides.map((_, i) => (
+            <button
+              key={i}
+              onClick={() => setIndex(i)}
+              aria-label={`Slide ${i + 1}`}
+              className={`h-2.5 w-2.5 rounded-full ${i === index ? "bg-primary" : "bg-white/45"}`}
+            />
+          ))}
+        </div>
+      </div>
+
+      <div className="relative hidden overflow-hidden rounded-3xl border border-primary/35 bg-surface md:block">
+        <video
+          className="h-[460px] w-full object-cover md:h-[500px]"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
+          poster={primary.image}
+        >
+          <source src="/professional-dental-implant-drill-kit-drill-nozzl-2026-01-21-17-32-07-utc.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-gradient-to-r from-black/72 via-black/45 to-black/20" />
+        <motion.div
+          initial={{ opacity: 0, y: 8 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="absolute bottom-3 left-3 right-3 rounded-2xl border border-primary/40 bg-white/50 p-4 text-fg shadow-[0_18px_42px_rgb(var(--fg)/0.28)] backdrop-blur-md md:bottom-5 md:left-5 md:right-5 md:max-w-3xl md:p-6"
+        >
+          <p className="inline-flex rounded-full border border-primary/45 bg-primary/20 px-2.5 py-1 text-[10px] uppercase tracking-wide text-black/75 md:text-[11px]">{HERO_BADGE}</p>
+          <h1 className="mt-2 max-w-3xl text-xl leading-tight md:mt-3 md:text-3xl">{HERO_TITLE}</h1>
+          <p className="mt-2 max-w-2xl text-sm text-fg/75 md:text-base">{HERO_SUBTITLE}</p>
+          <div className="mt-4 grid grid-cols-1 gap-2 sm:grid-cols-3 md:mt-5 md:flex md:flex-wrap md:gap-2">
+            <Link href="/produse" className="rounded-xl bg-primary px-4 py-2 text-center text-sm font-semibold text-black">Vezi catalogul</Link>
+            <Link href="/comanda-rapida" className="rounded-xl border border-black/25 bg-black/5 px-4 py-2 text-center text-sm text-black">Comandă rapidă</Link>
+            <Link href="/listele-mele" className="rounded-xl border border-black/25 bg-black/5 px-4 py-2 text-center text-sm text-black">Listele mele</Link>
+          </div>
+        </motion.div>
+        <div className="absolute right-3 top-3 flex gap-2 md:bottom-4 md:right-4 md:top-auto">
+          {slides.map((_, i) => (
+            <button
+              key={i}
+              onClick={() => setIndex(i)}
+              aria-label={`Slide ${i + 1}`}
+              className={`h-2.5 w-2.5 rounded-full ${i === index ? "bg-primary" : "bg-white/45"}`}
+            />
+          ))}
+        </div>
+      </div>
+
+      <div className="grid grid-cols-2 gap-3 md:grid-cols-3">
+        <Link href="/produse" className="surface rounded-2xl p-4 transition hover:-translate-y-0.5">
+          <Search className="h-4 w-4" />
+          <p className="mt-2 font-medium">Căutare rapidă</p>
+          <p className="mt-1 text-sm text-fg/70">Filtre după brand, material, granulație și compatibilitate.</p>
+        </Link>
+        <Link href="/cont" className="surface rounded-2xl p-4 transition hover:-translate-y-0.5">
+          <RotateCcw className="h-4 w-4" />
+          <p className="mt-2 font-medium">Reordonare rapidă</p>
+          <p className="mt-1 text-sm text-fg/70">Acces la comenzi recente și adăugare rapidă în coș.</p>
+        </Link>
+        <Link href="/checkout" className="surface col-span-2 rounded-2xl p-4 transition hover:-translate-y-0.5 md:col-span-1">
+          <Package className="h-4 w-4" />
+          <p className="mt-2 font-medium">Pachete recomandate</p>
+          <p className="mt-1 text-sm text-fg/70">Seturi pentru finisare, zirconiu și restaurări directe.</p>
+        </Link>
+      </div>
+
+      <div className="grid grid-cols-2 gap-3 md:grid-cols-3">
+        {slides.map((slide, i) => (
+          <div key={slide.title} className={`relative overflow-hidden rounded-2xl border border-fg/10 ${i === 0 ? "col-span-2" : "col-span-1"}`}>
+            <Image src={slide.image} alt={slide.title} width={900} height={450} className="h-36 w-full object-cover blur-[2px] md:h-40 md:blur-0" />
+            <div className="absolute inset-0 bg-gradient-to-t from-fg/60 to-transparent" />
+            <p className="absolute bottom-2 left-3 right-3 text-xs font-medium text-white">{slide.title}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+

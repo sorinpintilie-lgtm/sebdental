@@ -33,6 +33,9 @@ export const metadata: Metadata = {
   },
   description: DEFAULT_DESCRIPTION,
   keywords: DEFAULT_KEYWORDS,
+  icons: {
+    icon: "/favicon.png",
+  },
   alternates: {
     canonical: "/",
   },

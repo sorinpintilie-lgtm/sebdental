@@ -1,0 +1,82 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme inline {
+  --color-bg: #F6F6F6;
+  --color-fg: #000000;
+  --color-surface: #FFFFFF;
+  --color-primary: #86CCA7;
+  --color-copper: #6AB88E;
+  --color-violet: #86CCA7;
+  --color-mint: #DDF5E8;
+}
+
+:root{
+  --promo-height: 40px;
+  --bg: 246 246 246;
+  --fg: 0 0 0;
+  --surface: 255 255 255;
+  --primary: 134 204 167;
+  --copper: 106 184 142;
+  --violet: 134 204 167;
+  --mint: 221 245 232;
+  --hairline: 0 0 0;
+}
+
+* {
+  border-color: rgb(var(--hairline) / 0.12);
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body{
+  background: rgb(var(--bg));
+  color: rgb(var(--fg));
+  font-family: var(--font-inter), sans-serif;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-sora), sans-serif;
+  letter-spacing: -0.015em;
+}
+
+code,
+.mono {
+  font-family: var(--font-jetbrains-mono), monospace;
+}
+
+.surface {
+  background: rgb(var(--surface));
+  border: 1px solid rgb(var(--hairline) / 0.18);
+  box-shadow: 0 3px 12px rgb(var(--fg) / 0.08);
+}
+
+.accent-chip {
+  background: rgb(var(--mint));
+  color: rgb(var(--fg));
+  border: 1px solid rgb(var(--primary) / 0.55);
+}
+
+.focus-ring {
+  outline: none;
+}
+
+.focus-ring:focus-visible {
+  box-shadow: 0 0 0 2px rgb(var(--violet) / 0.45);
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-33.333%);
+  }
+}

@@ -1,15 +1,8 @@
-import Link from "next/link";
-import type { Metadata } from "next";
-import { articles } from "@/data/articles";
+"use client";
 
-export const metadata: Metadata = {
-  title: "Ghiduri pentru alegerea frezelor dentare",
-  description:
-    "Articole practice pentru alegerea frezelor dentare: granulație, compatibilități FG/RA/HP, utilizare pe zirconiu, ceramică și compozit.",
-  alternates: {
-    canonical: "/ghiduri",
-  },
-};
+import Link from "next/link";
+import { articles } from "@/data/articles";
+import { CatalogSection } from "@/components/CatalogSection";
 
 export default function GhiduriPage() {
   return (
@@ -24,36 +17,7 @@ export default function GhiduriPage() {
         ))}
       </div>
 
-      <div className="space-y-4 pt-4">
-        <h2 className="text-2xl">Cataloage digitale</h2>
-        <div className="grid gap-4 lg:grid-cols-2">
-          <article className="surface rounded-2xl p-4">
-            <p className="mb-3 text-sm text-fg/70">Laborkatalog 2023</p>
-            <div className="overflow-hidden rounded-xl border border-fg/10 bg-white">
-              <iframe
-                src="https://www.yumpu.com/de/embed/view/67437729/laborkatalog-2023"
-                title="Laborkatalog 2023"
-                className="h-[560px] w-full"
-                loading="lazy"
-                allowFullScreen
-              />
-            </div>
-          </article>
-
-          <article className="surface rounded-2xl p-4">
-            <p className="mb-3 text-sm text-fg/70">Praxiskatalog</p>
-            <div className="overflow-hidden rounded-xl border border-fg/10 bg-white">
-              <iframe
-                src="https://www.yumpu.com/de/embed/view/68659621/praxiskatalog"
-                title="Praxiskatalog"
-                className="h-[560px] w-full"
-                loading="lazy"
-                allowFullScreen
-              />
-            </div>
-          </article>
-        </div>
-      </div>
+      <CatalogSection />
     </section>
   );
 }

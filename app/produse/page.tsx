@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { products } from "@/data/products";
 import { brands } from "@/data/brands";
 import { ProductCard } from "@/components/ProductCard";
+import { normalizeSearchText, productMatchesQuery, scoreProductSearch } from "@/lib/search";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 type ProduseSearchParams = {
@@ -57,7 +58,8 @@ export default async function ProdusePage({
   const params = await searchParams;
   const brand = params.brand;
   const compat = params.compat;
-  const q = (params.q ?? "").toLowerCase().trim();
+  const q = (params.q ?? "").trim();
+  const normalizedQ = normalizeSearchText(q);
   const sort = params.sort ?? "relevanta";
   const min = Number(params.min ?? 0);
   const max = Number(params.max ?? 9999);
@@ -72,12 +74,14 @@ export default async function ProdusePage({
     const byDiameter = diametru ? p.diameterMm.toFixed(1) === diametru : true;
     const byColor = color ? p.colorCode === color : true;
     const byTip = tip ? p.shape === tip : true;
-    const byQuery = q
-      ? [p.name, p.sku, p.isoCode, p.brand, p.material, p.shape, p.colorCode].join(" ").toLowerCase().includes(q)
-      : true;
+    const byQuery = normalizedQ ? productMatchesQuery(p, q) : true;
     return byBrand && byCompat && byPrice && byDiameter && byColor && byTip && byQuery;
   });
 
+  if (sort === "relevanta") filtered = [...filtered].sort((a, b) => {
+    if (q) return scoreProductSearch(b, q) - scoreProductSearch(a, q);
+    return a.name.localeCompare(b.name, "ro");
+  });
   if (sort === "pret-mic") filtered = [...filtered].sort((a, b) => a.priceLei - b.priceLei);
   if (sort === "pret-mare") filtered = [...filtered].sort((a, b) => b.priceLei - a.priceLei);
 
@@ -183,10 +187,10 @@ export default async function ProdusePage({
 
       <div>
         <h1 className="text-3xl">Catalog freze dentare</h1>
-        <p className="mt-2 text-fg/70">Filtrează rapid după buget, diametru, culoare, compatibilitate și brand.</p>
+        <p className="mt-2 text-fg/70">Filtrează rapid după cod, brand, compatibilitate, diametru, culoare și tip.</p>
         <div className="mt-4 grid gap-3 rounded-2xl border border-fg/10 bg-surface p-4 md:grid-cols-[1fr_260px]">
           <form action="/produse" className="flex gap-2">
-            <input name="q" defaultValue={q} placeholder="Caută după SKU, ISO, brand, nume" className="w-full rounded-xl border border-fg/20 px-3 py-2 text-sm" />
+            <input name="q" defaultValue={q} placeholder="Caută după cod, SKU, ISO, brand, nume" className="w-full rounded-xl border border-fg/20 px-3 py-2 text-sm" />
             <button className="rounded-xl bg-fg px-4 py-2 text-sm text-bg">Caută</button>
           </form>
           <form action="/produse" className="flex gap-2">
@@ -198,11 +202,17 @@ export default async function ProdusePage({
             <button className="rounded-xl border border-fg/20 px-3 py-2 text-sm">Aplică</button>
           </form>
         </div>
-        <div className="mt-6 grid grid-cols-2 gap-4 xl:grid-cols-3">
-          {filtered.map((product) => (
-            <ProductCard key={product.id} product={product} />
-          ))}
-        </div>
+        {filtered.length > 0 ? (
+          <div className="mt-6 grid grid-cols-2 gap-4 xl:grid-cols-3">
+            {filtered.map((product) => (
+              <ProductCard key={product.id} product={product} />
+            ))}
+          </div>
+        ) : (
+          <div className="mt-6 rounded-2xl border border-fg/10 bg-surface p-6 text-sm text-fg/70">
+            Nu am găsit produse pentru această căutare. Încearcă un cod fără spații, un brand, compatibilitatea FG/RA/HP sau forma frezei.
+          </div>
+        )}
       </div>
     </section>
   );
